@@ -12,7 +12,7 @@ class TaskController extends Controller
 {
     /**
     * Display ALL Tasks
-    **/
+    **/ 
     public function index() 
     {
         $tasks = Task::orderBy('created_at', 'asc')->get();
