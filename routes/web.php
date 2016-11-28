@@ -36,3 +36,6 @@ Route::delete('/task/{id}', function ($id) {
 
     return redirect('/');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
